@@ -37,8 +37,23 @@ def custom_score(game, player):
         The heuristic value of the current game state to the specified player.
     """
 
-    # TODO: finish this function!
-    raise NotImplementedError
+    # for now using the improved_hueristic score.
+    # in lecture 2 things were mentionted. If opening move, you go to center. If not opening, you go to un-mirrorable moves
+    # so since ill set that up on the opening move 'book' 
+    # perhaps here i should go with the 'unmirrorable moves left' for each? 
+    
+    if game.is_loser(player):
+        return float("-inf")
+
+    if game.is_winner(player):
+        return float("inf")
+
+    own_moves = len(game.get_legal_moves(player))   
+    opp_moves = len(game.get_legal_moves(game.get_opponent(player)))
+    # 
+    # 
+    
+    return float(own_moves - opp_moves)   
 
 
 class CustomPlayer:
@@ -123,6 +138,15 @@ class CustomPlayer:
         # Perform any required initializations, including selecting an initial
         # move from the game board (i.e., an opening book), or returning
         # immediately if there are no legal moves
+        
+        # check if no legal moves and return
+        
+        # based on the class lecture, the best opening move is the central suqare if you open and
+        # a non-mirrorable square if you dont so set those up
+        
+        # if opening player
+        
+        # if not 
 
         try:
             # The search method call (alpha beta or minimax) should happen in
