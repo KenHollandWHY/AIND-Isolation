@@ -42,6 +42,9 @@ def custom_score(game, player):
     # so since ill set that up on the opening move 'book' 
     # perhaps here i should go with the 'unmirrorable moves left' for each? 
     
+    
+    # also. The req is to submit 3 hureistics? Then maybe this function should just call another one where 
+    # the hueristics themselves are stored
     if game.is_loser(player):
         return float("-inf")
 
