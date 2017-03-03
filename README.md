@@ -1,4 +1,8 @@
 
+# my note to the below text from the original udacity repo
+I am going to post my answer to this problem up here. Since this is a learning exercise I am favoring explainability over 'pythonicness'
+and clarity over speed. So if you have some alternative suggestions on how to speed up the code after its done feel free to tag me, Id love to see them.
+
 # Build a Game-playing Agent
 
 ## Synopsis
