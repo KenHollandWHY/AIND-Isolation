@@ -222,7 +222,7 @@ class CustomPlayer:
                 best_score = float('inf')
                 next_score, next_move = self.minimax(game.forecast_move(move), depth-1,True)
                 if next_score < score:
-                    score = ext_score
+                    score = next_score
                     best_move = move
         return score, best_move 
 
