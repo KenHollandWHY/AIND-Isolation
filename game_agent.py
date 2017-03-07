@@ -209,11 +209,11 @@ class CustomPlayer:
         if depth == 0:
             return self.score(game, self), game.get_player_location(self) #termination trigger for the recursion below
         if maximizing_player:                                             # if the True toggle is on we are in a max branch of minimax
-            score = float("-inf")                                         
+            score = float("-inf")                                         # we want any score that is greater tahn negative infinity. even a tiny number is alright
             for move in game.get_legal_moves():                           # scan through all the moves we have in the current board
                 
                 next_score, next_move = self.minimax(game.forecast_move(move), depth-1, False)  # recursively call minimax, toggle to min
-                if next_score > score:                                                      # check if we found a better score than we have so far
+                if next_score > score:                                                      # check if we found a better score than we have so far. 
                     score = next_score                                                      # if we did make it the new score and make sure the top 
                     best_move = move                                                        # move that started this whole for loop is saved
         else:
