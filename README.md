@@ -1,7 +1,8 @@
 
-# my note to the below text from the original udacity repo
-I am going to post my answer to this problem up here. Since this is a learning exercise I am favoring explainability over 'pythonicness'
+# Below are the class instructions, here are my notes added to them.
+Since this is a learning exercise I am favoring explainability over 'pythonicness'
 and clarity over speed. So if you have some alternative suggestions on how to speed up the code after its done feel free to tag me, Id love to see them.
+The code I wrote is in game_agent, annotated. 
 
 # Build a Game-playing Agent
 
